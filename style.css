@@ -1,0 +1,551 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+}
+
+img {
+    max-width: 100%;
+}
+
+.center {
+    padding-left: calc(50% - 1160px / 2);
+    padding-right: calc(50% - 1160px / 2);
+}
+
+/* Header */
+.header {
+    background: #033F63;
+    display: flex;
+    justify-content: flex-end;
+    padding-top: 31.5px;
+    padding-bottom: 31.5px;
+}
+
+.header_menu {
+    display: flex;
+    align-items: center;
+    gap: 46px;
+}
+
+.header_link {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+.header_link:hover {
+    color: #FEDC97;
+}
+
+/* Top */
+.top {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 154px;
+    padding-top: 142.09px;
+    padding-bottom: 142.09px;
+}
+
+.top_heading {
+    font-weight: 400;
+    font-size: 110px;
+    line-height: 133px;
+    color: #033F63;
+    max-width: 560px;
+}
+
+/* Обо мне */
+.about {
+    background: #F5F5F5;
+    padding-top: 112.5px;
+    padding-bottom: 112.5px;
+}
+
+.heading {
+    font-weight: 400;
+    font-size: 60px;
+    line-height: 73px;
+    color: #033F63;
+    text-align: center;
+}
+
+.about_content {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 50px;
+    gap: 130px;
+    justify-content: flex-end;
+}
+
+.about_text {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 30px;
+    color: rgba(0, 0, 0, 0.7);
+    max-width: 575px;
+}
+
+.about_text p {
+    margin-bottom: 30px;
+}
+
+
+/* Навыки */
+.skills {
+    padding-top: 108.5px;
+    padding-bottom: 108.5px;
+}
+
+.skills_content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 89px;
+    margin-top: 49.5px;
+}
+
+/* Мои работы */
+.projects {
+    background: #F5F5F5;
+    padding-top: 93px;
+    padding-bottom: 93px;
+    overflow: hidden;
+}
+
+/* .projects_img {
+    width: 761px;
+    height: 436px;
+
+} */
+
+.projects_slider {
+    margin-top: 45px;
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Контакты */
+
+.contacts {
+    padding-top: 90px;
+    padding-bottom: 0px;
+}
+
+.contacts_info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    margin-top: 56px;
+}
+
+.contacts_link {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: rgba(0, 0, 0, 0.7);
+    text-decoration: none;
+}
+
+.contacts_link:hover {
+    color: #FEDC97;
+}
+
+/* Футер */
+
+.footer {
+    background: #FFFFFF;
+    padding-top: 66px;
+    padding-bottom: 90px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 57px;
+}
+
+.carousel-indicators [data-bs-target] {
+    background-color: #000000;
+}
+
+/* Слайдер */
+
+.carousel-control-prev-icon {
+    background-image: url(img/left.svg);
+    width: 100px;
+    height: 100px;
+}
+
+.carousel-control-next-icon {
+    background-image: url(img/right.svg);
+    width: 100px;
+    height: 100px;
+}
+
+.carousel-control-next {
+    right: -180px;
+}
+
+.carousel-control-prev {
+    left: -180px;
+}
+
+/* Бутстрап */
+.navbar-collapse {
+    flex-grow: 0;
+}
+
+.navbar-toggler {
+    border: none;
+}
+
+.navbar-toggler-icon {
+    background-image: url(img/menu.svg);
+}
+
+.navbar-toggler:focus {
+    box-shadow: none;
+}
+
+.container-fluid {
+    display: flex;
+    flex-wrap: inherit;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+
+
+/* Стили для планшета */
+@media (max-width: 1279px) {
+    .center {
+        padding-left: calc(50% - 720px / 2);
+        padding-right: calc(50% - 720px / 2);
+    }
+
+    .about_text {
+        max-width: none;
+    }
+
+    .about_content {
+        justify-content: center;
+        gap: 30px;
+    }
+
+    .skills_icon {
+        max-width: 72px;
+    }
+
+    .header {
+        padding-top: 16.5px;
+        padding-bottom: 16.5px;
+    }
+
+    /* Top */
+    .top {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: nowrap;
+        gap: 93px;
+        padding-top: 80px;
+        padding-bottom: 80px;
+    }
+
+    .top_heading {
+        font-weight: 400;
+        font-size: 60px;
+        line-height: 73px;
+        color: #033F63;
+        max-width: 300px;
+    }
+
+    .top_img {
+        width: 279px;
+        height: 240px;
+    }
+
+    /* Обо мне */
+    .about {
+        background: #F5F5F5;
+        padding-top: 52px;
+        padding-bottom: 22px;
+    }
+
+    .heading {
+        font-weight: 400;
+        font-size: 30px;
+        line-height: 36px;
+        color: #033F63;
+        text-align: center;
+    }
+
+    .about_content {
+        gap: 35px;
+        display: flex;
+        margin-top: 37px;
+        align-items: flex-start;
+    }
+
+    .about_img {
+        width: 187px;
+        height: 171px;
+    }
+
+    .about_text {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 196%;
+        color: rgba(0, 0, 0, 0.7);
+        max-width: 426px;
+    }
+
+    /* Навыки */
+    .skills {
+        padding-top: 57.5px;
+        padding-bottom: 57.5px;
+    }
+
+    .skills_content {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 43px;
+        margin-top: 27px;
+    }
+
+    /* Мои работы */
+    .projects {
+        background: #F5F5F5;
+        padding-top: 76px;
+        padding-bottom: 76px;
+        overflow: hidden;
+    }
+
+    .projects_slider {
+
+        margin-top: 27px;
+        max-width: 600px;
+        margin-left: auto;
+        margin-right: auto;
+
+    }
+
+    .projects_img {
+        width: 416px;
+        height: 267px;
+    }
+
+    .carousel-control-next {
+        right: -120px;
+    }
+
+    .carousel-control-prev {
+        left: -120px;
+    }
+
+    /* Контакты */
+
+    .contacts {
+        padding-top: 51.5px;
+        padding-bottom: 0px;
+    }
+
+    .contacts_info {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 17px;
+        margin-top: 37px;
+    }
+
+    /* Футер */
+
+    .footer {
+        background: #FFFFFF;
+        padding-top: 37px;
+        padding-bottom: 51.5px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 24px;
+    }
+
+
+
+
+
+}
+
+
+/* Стили для бургер меню */
+@media (max-width: 991px) {
+    .header_menu {
+
+        align-items: flex-end;
+        gap: 29px;
+        padding-top: 35px;
+        padding-left: 12px;
+    }
+
+
+
+
+}
+
+
+
+
+
+/* Стили для мобилки */
+@media (max-width: 767px) {
+
+    .center {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .header {
+        padding-top: 16.5px;
+        padding-bottom: 16.5px;
+    }
+
+    .header_link {
+        padding-top: 13px;
+        padding-bottom: 18px;
+    }
+
+    /* Top */
+    .top_img {
+        width: 180px;
+        height: 155px;
+    }
+
+    .top_heading {
+
+        font-size: 18px;
+        line-height: 22px;
+    }
+
+    .top {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        padding-top: 28.5px;
+        padding-bottom: 35px;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+    /* Обо мне */
+    .heading {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 19px;
+    }
+
+    .about {
+        padding-top: 24.5px;
+        padding-bottom: 21.5px;
+    }
+
+    .about_content {
+        gap: 0px;
+        display: flex;
+        margin-top: 37px;
+        align-items: center;
+        flex-direction: column-reverse;
+    }
+
+    .about_text {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0px 0px 0px 10px;
+        gap: 17px;
+
+    }
+
+    .about_img {
+        width: 89px;
+        height: 81px;
+
+    }
+
+    /* Навыки */
+
+
+
+    .skills {
+        padding-top: 35.5px;
+        gap: 19px;
+        padding-bottom: 25.5px;
+    }
+
+    .skills_content {
+        gap: 29px;
+    }
+
+    .skills_icon {
+        width: 52px;
+        height: 52px;
+    }
+
+    /* Мои работы */
+    .projects {
+        padding-top: 45px;
+        padding-bottom: 30px;
+        overflow: hidden;
+
+    }
+
+    .projects_slider {
+        margin-top: 20px;
+        max-width: 430px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+
+    .carousel-control-next,
+    .carousel-control-prev {
+        display: none;
+    }
+
+    .carousel-control-next,
+    .carousel-control-prev {
+        display: none;
+    }
+
+    .projects_img {
+        width: 294px;
+        height: 175px;
+    }
+
+    /* Футер */
+
+
+    .footer {
+        padding-top: 37px;
+        padding-bottom: 38.5px;
+    }
+
+    .footer_link-icon {
+        width: 27px;
+        height: 27px;
+    }
+
+
+
+}
